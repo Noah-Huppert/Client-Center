@@ -1,0 +1,282 @@
+a {
+	font-style: normal;
+	text-decoration: none;
+	color: #2489ce;
+	font-weight: 700;
+}
+#loginForm{
+	width: 260px;
+	margin: auto;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #95a5a6;
+	border-radius: 7px;
+	font-weight: 700;
+	font-family: 'Doppio One', sans-serif;
+}
+#login{
+	width: 80px;
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	margin-left: 70px;
+	margin-top: 20px;
+	background: #3498db;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2980b9;
+	font-weight: 700;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FFFFFF;
+}
+label{
+	font-weight: normal;
+	margin-top: 10px;
+}
+#formTitle{
+	color: #333;
+	font-size: 21px;
+}
+#welcome{
+	margin-left: 20px;
+	font-size: 18px;
+	font-family: 'Radley', serif;
+	font-style: italic;
+}
+#logOut{
+	float: right;
+	margin-top: -25px;
+	margin-right: 20px;
+	font-size: 18px;
+	font-family: 'Radley', serif;
+	font-style: italic;
+}
+#content{
+	margin-top: 100px;
+}
+#clientInteraction{
+	
+}
+#livePreview{
+	width: 155px;
+	height: 40px;
+	line-height: 40px;
+	background: #2ecc71;
+	font-family: 'Radley', serif;
+	font-style: italic;
+	color: #FFFFFF;
+	font-size: 18px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #27ae60;
+	border-radius: 3px;
+}
+#newHourButton{
+	height: 40px;
+	line-height: 40px;
+	background: #2ecc71;
+	font-family: 'Radley', serif;
+	font-style: italic;
+	color: #FFFFFF;
+	font-size: 18px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #27ae60;
+	border-radius: 3px;
+}
+#time{
+	margin-top: 20px;
+	padding: 10px;
+	font-size: 16px;
+	font-family: 'Radley', serif;
+	font-style: italic;
+	text-align: center;
+}
+#hours{
+	font-size: 18px;
+}
+#icon{
+	font-size: 18px;
+}
+#newHour{
+	border-style: none;
+	text-align: center;
+}
+#contactMe{
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 16px;
+	font-family: 'Radley', serif;
+	font-style: italic;
+	text-align: center;
+}
+.items{
+	max-height: 500px;
+	overflow-y: scroll;
+}
+.list{
+	margin: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #27ae60;
+	border-radius: 5px;
+}
+.header{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #27ae60;
+	background: #2ecc71;
+	font-family: 'Radley', serif;
+	font-style: italic;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.item{
+	max-width: 100% - 40;
+	height: 40px;
+	line-height: 40px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #bdc3c7;
+	text-align: center;
+}
+.headerButton{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #FFFFFF;
+	background: #1abc9c;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #16a085;
+	border-radius: 3px;
+	text-align: center;
+}
+#addBug{
+	background: #e74c3c;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c0392b;
+}
+#newChange{
+	width: 80%;
+	min-width: 100px;
+	margin-left: 10px;
+}
+#newTodo{
+	width: 80%;
+	min-width: 100px;
+	margin-left: 10px;
+}
+.listButton{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 10px;
+	margin-top: 2.5px;
+	color: #FFFFFF;
+	background: #e74c3c;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c0392b;
+	border-radius: 3px;
+	text-align: center;
+	float: right;
+}
+#changePrev{
+	margin-top: 10px;
+}
+#changePrevButton{
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+	background: #2ecc71;
+	font-family: 'Radley', serif;
+	font-style: italic;
+	color: #FFFFFF;
+	font-size: 18px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #27ae60;
+	border-radius: 3px;
+}
+.help{
+	display: none;
+	max-width: 230px;
+	padding: 3px;
+	margin-bottom: 7px;
+	font-family: 'PT Sans', sans-serif;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #bdc3c7;
+	border-radius: 3px;
+}
+form .input-group{
+	max-width: 216px;
+}
+#submit{
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+	margin-left: 29px;
+	background: #2ecc71;
+	font-family: 'Radley', serif;
+	font-style: italic;
+	color: #FFFFFF;
+	font-size: 18px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #27ae60;
+	border-radius: 3px;
+}
+#register{
+	width: 217px;
+	margin: auto;
+	display: none;
+}
+#newProject{
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 20px;
+	margin-top: 10px;
+	background: #2ecc71;
+	font-family: 'Radley', serif;
+	font-style: italic;
+	color: #FFFFFF;
+	font-size: 18px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #27ae60;
+	border-radius: 3px;
+}
+.inlineBugWarning{
+	//color: #e74c3c;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+.inlineBugContainer{
+	padding: 3px;
+	padding-top: 7px;
+	padding-left: 5px;
+	color: #FFFFFF;
+	background: #e74c3c;
+	border-width: 1px;
+	border-color: #c0392b;
+	border-radius: 3px;
+}
+#newDate{
+	max-width: 150px;
+}
+#newHours{
+	max-width: 70px;
+	margin-left: 10px;
+}
+#addHours{
+	margin-left: 10px;
+}

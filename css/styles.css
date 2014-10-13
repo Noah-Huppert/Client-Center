@@ -1,0 +1,130 @@
+body{
+	
+}
+a {
+	font-style: normal;
+	text-decoration: none;
+	color: #2489ce;
+	font-weight: 700;
+}
+#pageHeader{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#aboutMe{
+	max-width: 700px;
+	margin: auto;
+	margin-top: 50px;
+	font-family: 'PT Sans', sans-serif;
+}
+#quoteButtons{
+	width: 300px;
+	margin: auto;
+	margin-top: 30px;
+}
+fieldset{
+	font-weight: 700;
+	font-family: 'Doppio One', sans-serif;
+}
+.red{
+	color: #e74c3c;
+	font-size: 14px;
+}
+.help{
+	display: none;
+	max-width: 230px;
+	padding: 3px;
+	margin-left: 2em;
+	margin-bottom: 7px;
+	font-family: 'PT Sans', sans-serif;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #bdc3c7;
+	border-radius: 3px;
+}
+#quoteButton{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	margin: auto;
+	background: #3498db;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2980b9;
+	font-weight: 700;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FFFFFF;
+}
+.input-group{
+	font-weight: 700;
+	font-family: 'Doppio One', sans-serif;
+}
+.checkOptions{
+	width: 200px;
+}
+.checkOptionsMore{
+	width: 280px;
+}
+#submit{
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	margin: auto;
+	background: #2ecc71;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #27ae60;
+	font-weight: 700;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FFFFFF;
+}
+form .input-group{
+	margin-top: 2px;
+}
+
+form{
+	display: none;
+	max-width: 600px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+#firstNameCotainer{
+	
+}
+#lastNameCotainer{
+	margin-top: -36px;
+	margin-left: 285px;
+}
+#emailContainer{
+	margin-top: 10px;
+}
+#phoneContainer{
+	margin-top: -36px;
+	margin-left: 285px;
+}
+#portalInfo{
+	margin-top: 10px;
+}
+#services{
+	margin-top: 30px;
+}
+#websiteType{
+	margin-top: -95px;
+	margin-left: 320px;
+}
+#extraFeatures{
+	margin-top: -150px;
+}
+#websiteDesc{
+	margin-top: 80px;
+	margin-left: 50px;
+}
+#submit{
+	margin-top: 20px;
+	margin-left: 250px;
+	margin-bottom: 50px;
+}

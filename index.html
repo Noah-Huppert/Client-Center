@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Client Center</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Sonsie+One|PT+Sans|Roboto+Condensed:700|Doppio+One' rel='stylesheet' type='text/css'>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+		<script src='js/transit/jquery.transit.min.js'></script>
+	</head>
+	<body>
+		<div class="row">
+			<div class="container">
+				<div id="pageHeader">
+					Client Center
+				</div>
+				<div id="aboutMe">
+					My name is Noah Huppert and I am 15 years old. I am currently attending Lincoln Sudbury
+					High School. I enjoy programming and animating. I created all the pages on this domain.
+					You can check out my <a href="http://www.noahhuppert.com/Portfolio">portfolio here</a>,
+					or check out my recent <a href="http://www.noahhuppert.com/Blog">blog posts here</a>.
+					I am experienced in HTML, CSS, PHP, Javascript, Java, C++, and C#. I am a good problem
+					solver and enjoy working with others.
+				</div>
+				<div id="quoteButtons">
+					<button id="quoteButton">
+						Request a quote
+					</button>
+					<span style="font-size: 12px;">
+						already a customer? <a href="./portal.php">Login</a>
+					</span>
+				</div>
+				
+				<form id="clientF" action="quote.php" method="get">
+					<fieldset>
+						<legend>Contact Information</legend>
+						<!--Name-->
+						<div id="firstNameCotainer">
+							<div class="input-group checkOptionsMore">
+								<span class="input-group-addon">First Name<span class="red">*</span></span>
+								<input name="firstName" type="text" class="form-control" placeholder="John">
+							</div>
+						</div>
+							
+						<div id="lastNameCotainer">
+							<div class="input-group checkOptionsMore">
+								<span class="input-group-addon">Last Name<span class="red">*</span></span>
+								<input name="lastName" type="text" class="form-control" placeholder="Smith">
+							</div>
+						</div>
+						
+						<!--Email-->
+						<div id="emailContainer">
+							<div class="input-group checkOptionsMore">
+								<span class="input-group-addon">Email<span class="red">*</span></span>
+								<input name="email" type="text" class="form-control" placeholder="example@example.com">
+							</div>
+						</div>
+						
+						<!--Phone-->
+						<div id="phoneContainer">
+							<div class="input-group checkOptionsMore">
+								<span class="input-group-addon">Phone<span class="red">*</span></span>
+								<input name="phone" type="tel" class="form-control" placeholder="123-456-7890">
+							</div>
+						</div>
+						
+						<!--Client Portal Pass-->
+						<div id="portalInfo">
+							<div class="input-group checkOptionsMore" style="width: 620px;">
+								<span class="input-group-addon">Client Portal Password<span class="red">*</span></span>
+								<input name="portalPass" type="text" class="form-control" placeholder="Password">
+								<span class="input-group-addon" style="border-left-style: none; border-bottom-right-radius: 3px; border-top-right-radius: 3px;">
+									<span style="cursor: pointer;" id="webDevButton" class="glyphicon glyphicon-question-sign" data-help="portalHelp"></span>
+								</span>
+								<span style="font-size: 10px; opacity: 0.5; ">*Passwords are encrypted</span>
+							</div>
+						</div>
+						<div class="help" id="portalHelp" style="margin-left: 0;">
+							This will allow you to access the 
+							<a href="./portal.php">Client Portal</a>.
+							The Client Portal
+							allows you to see update logs and live versions
+							of your website as it is made.
+						</div>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Website Details</legend>
+						<!--Services-->
+						<div id="services">
+							<div class="input-group">
+								Services required: <span style="font-size: 10px; opacity: 0.5; ">*Check all the apply</span>
+							</div>
+							<div class="input-group checkOptionsMore" style="padding-left: 2em;">
+								<span class="input-group-addon"><input name="webDesign" type="checkbox"></span>
+								<input style="background: #FFFFFF; cursor: pointer;" type="text" class="form-control" value="Web Design" readonly>
+								<span class="input-group-addon"><span style="cursor: pointer;" id="webDesButton" class="glyphicon glyphicon-question-sign" data-help="webDesHelp"></span></span>
+							</div>
+							<div id="webDesHelp" class="help">
+								Web design is the proccess of making a webpage look good.
+								Without it a page would look like 
+								<a href="http://www.theworldsworstwebsiteever.com/">this</a>.
+							</div>
+							<div class="input-group checkOptionsMore" style="padding-left: 2em;">
+								<span class="input-group-addon"><input name="webDevelopement" type="checkbox"></span>
+								<input style="background: #FFFFFF; cursor: pointer;" type="text" class="form-control" value="Web Developement" readonly>
+								<span class="input-group-addon"><span style="cursor: pointer;" id="webDevButton" class="glyphicon glyphicon-question-sign" data-help="webDevHelp"></span></span>
+							</div>
+							<div id="webDevHelp" class="help">
+								Web development is the making the backend of a website,
+								the part that does all the heavy lifting that no one ever
+								sees. For instance when you login to a website there is
+								 some code that checks your username and password.
+							</div>
+						</div>
+						
+						<!--Website Type-->
+						<div id="websiteType">
+							<div class="input-group">
+								Website Type: <span style="font-size: 10px; opacity: 0.5;">*Check all the apply</span>
+							</div>
+							<div class="input-group checkOptions" style="padding-left: 2em;">
+								<span class="input-group-addon"><input name="blog" type="checkbox"></span>
+								<input style="background: #FFFFFF; cursor: pointer;" type="text" class="form-control" value="Blog" readonly>
+							</div>
+							<div class="input-group checkOptions" style="padding-left: 2em;">
+								<span class="input-group-addon"><input name="portfolio" type="checkbox"></span>
+								<input style="background: #FFFFFF; cursor: pointer;" type="text" class="form-control" value="Portfolio" readonly>
+							</div>
+							<div class="input-group checkOptions" style="padding-left: 2em;">
+								<span class="input-group-addon"><input name="productPage" type="checkbox"></span>
+								<input style="background: #FFFFFF; cursor: pointer;" type="text" class="form-control" value="Product Page" readonly>
+							</div>
+							<div class="input-group checkOptions" style="padding-left: 2em;">
+								<span class="input-group-addon"><input name="forums" type="checkbox"></span>
+								<input style="background: #FFFFFF; cursor: pointer;" type="text" class="form-control" value="Forums" readonly>
+							</div>
+							<div class="input-group checkOptions" style="padding-left: 2em;">
+								<span class="input-group-addon"><input name="wiki" type="checkbox"></span>
+								<input style="background: #FFFFFF; cursor: pointer;" type="text" class="form-control" value="Wiki" readonly>
+							</div>
+							<div class="input-group checkOptions" style="padding-left: 2em;">
+								<span class="input-group-addon"><input name="bugTracker" type="checkbox"></span>
+								<input style="background: #FFFFFF; cursor: pointer;" type="text" class="form-control" value="Bug Tracker" readonly>
+							</div>
+							<div class="input-group" style="width: 400px; padding-left: 2em;">
+								<span class="input-group-addon"><input name="other" type="checkbox">&nbsp;&nbsp;Other</span>
+								<input name="otherInput" type="text" class="form-control">
+							</div>
+						</div>
+						
+						<!--Extra Features-->
+						<div id="extraFeatures">
+							<div class="input-group">
+								Extra Features: <span style="font-size: 10px; opacity: 0.5;">*Check all the apply</span>
+							</div>
+							<div class="input-group checkOptionsMore" style="padding-left: 2em;">
+								<span class="input-group-addon"><input name="responsiveDesign" type="checkbox"></span>
+								<input style="background: #FFFFFF; cursor: pointer;" type="text" class="form-control" value="Responsive Design" readonly>
+								<span class="input-group-addon"><span style="cursor: pointer;" id="webDesButton" class="glyphicon glyphicon-question-sign" data-help="respDesignHelp"></span></span>
+							</div>
+							<div class="help" id="respDesignHelp">
+								A responcive design in a design that changed based
+								on the size of the users browser window. This means
+								that if a user is on a mobile device the viewing experience 
+								will be optimized for them. For an example of this go visit
+								<a href="http://www.noahhuppert.com">my main site</a>.
+							</div>
+							<div class="input-group checkOptionsMore" style="padding-left: 2em;">
+								<span class="input-group-addon"><input name="serverSetup" type="checkbox"></span>
+								<input style="background: #FFFFFF; cursor: pointer;" type="text" class="form-control" value="Server Setup" readonly>
+								<span class="input-group-addon"><span style="cursor: pointer;" id="webDevButton" class="glyphicon glyphicon-question-sign" data-help="serverSetupHelp"></span></span>
+							</div>
+						</div>
+						<div class="help" id="serverSetupHelp">
+							If you have purchased a hosting plan I can set the 
+							server up for you and properly configure your site. 
+							If you are planning on buying a hosting plan I can recomend
+							some plans and set your server up after you purchase the
+							desired plan.
+						</div>
+						
+						<!--Website Description-->
+						<div id="websiteDesc">
+							<div class="input-group">
+								Description of website/other notes:<span class="red">*</span>
+							</div>
+							<div class="input-group" style="padding-left: 2em;">
+								<textarea class="form-control" name="otherStuff" style="width: 500px; height: 100px; border-radius: 3px;"></textarea>
+							</div>
+						</div>
+					</fieldset>
+					
+					
+					<!--Submit Button-->
+					<button id="submit">
+						Submit
+					</button>
+					
+				</form>
+			</div>
+		</div>
+		
+		<script>
+			//Quote Button
+			$('#quoteButton').click(function(){
+				$('#aboutMe').hide();
+				$('#quoteButtons').hide();
+				$('form').show('slide');
+			});
+		
+			//Help Button Click
+			$('.glyphicon-question-sign').click(function(){
+				$('#' + $(this).attr('data-help')).toggle('slide');
+			});
+		</script>
+	</body>
+</html>
